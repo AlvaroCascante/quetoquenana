@@ -1,0 +1,47 @@
+/* Clean modular stylesheet */
+:root{
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --text: #f1f5f9;
+  --muted: rgba(241,245,249,0.72);
+  --primary-color: #3b82f6;
+  --secondary-color: #8b5cf6;
+  --radius: 12px;
+}
+
+/* Reset / base */
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;background:var(--bg);color:var(--text);font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial}
+
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+@media (max-width:880px){.container{padding:0 16px}}
+
+/* Typography helpers */
+.gradient-text{
+  background: linear-gradient(135deg,var(--primary-color),var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-muted{opacity:0.7}
+
+/* Animations */
+@keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.fade-in{animation:fadeIn 0.8s ease-in}
+
+@keyframes slideIn{from{opacity:0;transform:translateX(-30px)}to{opacity:1;transform:translateX(0)}}
+.slide-in{animation:slideIn 1s ease-out}
+
+/* Cards & projects */
+.project-card{transition:transform 0.3s ease,box-shadow 0.3s ease}
+.project-card:hover{transform:translateY(-8px);box-shadow:0 20px 40px rgba(0,0,0,0.15)}
+
+.social-link{transition:all 0.3s ease}
+.social-link:hover{transform:translateY(-4px)}
+
+/* Small utilities */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600;cursor:pointer;border:0}
+.btn-primary{background:linear-gradient(90deg,var(--primary-color),var(--secondary-color));color:white}
+
+.footer{padding:28px 20px;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,0.03)}
