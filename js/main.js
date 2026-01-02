@@ -40,7 +40,7 @@ function renderApp() {
     <section class="fade-in" style="padding: 80px 24px; text-align: center; background: linear-gradient(135deg, ${config.background_color} 0%, ${config.surface_color} 100%);">
       <div style="max-width: 800px; margin: 0 auto;" class="container">
         <div style="width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 32px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.3); background: linear-gradient(135deg, ${config.primary_action_color}, ${config.secondary_action_color});">
-          <img src="images/profile2.png" alt="${config.hero_name}" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.parentElement.innerHTML='${config.hero_name.charAt(0).toUpperCase()}'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center'; this.parentElement.style.fontSize='48px'; this.parentElement.style.fontWeight='700'; this.parentElement.style.color='white';" loading="lazy">
+          <img src="images/user.png" alt="${config.hero_name}" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.parentElement.innerHTML='${config.hero_name.charAt(0).toUpperCase()}'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center'; this.parentElement.style.fontSize='48px'; this.parentElement.style.fontWeight='700'; this.parentElement.style.color='white';" loading="lazy">
         </div>
 
         <h1 class="gradient-text" style="font-size: ${baseSize * 3}px; font-weight: 800; margin-bottom: 16px; line-height: 1.2;">
