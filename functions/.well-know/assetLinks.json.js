@@ -1,0 +1,23 @@
+export async function onRequestGet() {
+  return new Response(
+    JSON.stringify([
+      {
+        relation: [
+          "delegate_permission/common.handle_all_urls"
+        ],
+        target: {
+          namespace: "android_app",
+          package_name: "com.quetoquenana.and",
+          sha256_cert_fingerprints: [
+            "F1:83:9E:04:0B:0B:AF:47:2A:C6:B3:B1:B1:7F:64:69:7C:69:C9:FD:68:D9:AA:3F:7C:5C:49:6E:49:C4:9C:2A"
+          ]
+        }
+      }
+    ]),
+    {
+      headers: {
+        "Content-Type": "application/json"
+      }
+    }
+  );
+}
